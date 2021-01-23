@@ -191,7 +191,68 @@ section.services .card-wrapper .card:hover{
 section.services .card-wrapper .card:hover h2, section.services .card-wrapper .card:hover p{
     color:var(--pure);
 }
+section.freelancer{
+    text-align: center;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/camera.png);
+    color: var(--pure);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 85%, 0 100%);
+    padding-bottom: 14rem;
 
+}
+section.freelancer h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 
+}
+section.freelancer p{
+    margin-bottom: 2rem;
+    font-family: 'lato', sans-serif;
+}
+section.reviews .slider .slide img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit:cover;
+    margin-bottom: 2rem;
+}
+section.reviews .slider .slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:0 8rem;
+}
+section.reviews .slider .slide p{
+    font-family: 'lato', sans-serif;
+    color: var(--ternary);
+    margin-bottom: 1rem;
+}
+section.reviews .slider .slide span{
+    font-size: 0.8rem;
+}
+section.reviews .slider-dots .dots{
+    list-style-type:none;
+    display:flex!important;
+    justify-content: center;
+}
+section.reviews .slider-dots{
+    margin-top: 3rem;
+}
+section.reviews .slider-dots button{
+    font-size: 0%;
+    width: 8px;
+    height: 5px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background: var(--ternary);
+    border-radius: 50px;
+    cursor: pointer;
 
-
+}
+section.reviews .dots li.slick-active button{
+    background:var(--primary);
+    width:20px;
+    height: 6px;
+    
+}
