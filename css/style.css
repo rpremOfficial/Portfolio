@@ -21,7 +21,12 @@ html{
 }
 header{
     background-color: #161616;
-     clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 92%, 0 100%);
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 90%, 0 100%);
+}
+@media (min-width:1130px){
+    .hamberger {
+    display: none;
+}
 }
 .container{
     max-width:1152px;
@@ -70,11 +75,11 @@ header nav {
 }
 header nav .branding{
     margin-right:3rem;
+    margin-top: -0.9rem;
 }
 header nav .branding img{
-    max-width: 140px;
+    max-height: 40px;
     margin-top: 0%;
-    border-color: var(--dark);
 }
 .hero .left img{
     height: 450px;
@@ -439,25 +444,12 @@ footer{
     padding: 3rem, 0;
 }
 footer .footer-logo{
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
     height: 50px;
-    width: 5opx;
-}
-footer .footer-social a{
-    margin-right: 1rem;
-    text-align: center;
-    
 }
 footer .copyright{
     color:var(--ternary);
 }
-footer .footer-social{
-    margin-bottom: 2rem;
-    margin-left: -1rem;
-    height: 30px;
-    width: 30px;
-}
-
 
 .site-main-wrapper{
     position: relative;
@@ -517,12 +509,11 @@ footer .footer-social{
 }
 
 @media (max-width:1130px){
-    .branding{
-        max-width: 120px;
-    }
-    .hero{
     header #main-nav{
         display:none;
+    }
+    header .branding{
+        max-width: 120px;
     }
     .hero .left img{
         width: 260px;
@@ -559,9 +550,6 @@ footer .footer-social{
 }
 
 @media (max-width:576px){
-    .branding{
-        max-width: 120px;
-    }
     .hero{
         flex-direction: column;
     }
@@ -575,6 +563,7 @@ footer .footer-social{
         top: 330px;
         margin-left: -0.3rem;
         padding:0 1rem;
+        background: linear-gradient(rgba(0,0,0,9), rgba(0,0,0,0.9));
     }
     .hero .right h1{
         font-size: 1.82rem;
