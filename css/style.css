@@ -27,6 +27,9 @@ header{
     .hamberger {
     display: none;
 }
+    .mobile-logo{
+        display: none;
+    }
 }
 .container{
     max-width:1152px;
@@ -507,6 +510,14 @@ footer .copyright{
     font-size: 2rem;
 
 }
+.mobile-logo img{
+    position: absolute;
+    top: 32px;
+    left: 25px;
+    z-index: 11;
+    width: 120px;
+    display: block;
+}
 
 @media (max-width:1130px){
     header #main-nav{
@@ -568,15 +579,14 @@ footer .copyright{
         padding:0 1rem;
     }
     .hero .right h1{
-        font-size: 1.82rem;
+        font-size: 1.8rem;
     }
     .hero .right h6{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .hero .right p{
         font-size: 0.75rem;
         margin-top: -1rem;
-        margin-bottom: 1rem;
     }
     header{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 93%, 0 100%);
