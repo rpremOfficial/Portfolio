@@ -509,6 +509,12 @@ footer .copyright{
 }
 
 @media (max-width:1130px){
+<<<<<<< HEAD
+=======
+    .branding{
+        max-width: 120px;
+    }
+>>>>>>> 3a24484a88a07ea500e14bd87305a54bfa40845a
     header #main-nav{
         display:none;
     }
